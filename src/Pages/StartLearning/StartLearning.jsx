@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
 import style from "./StartLearning.module.css";
 import data from "../../data/courses.json";
 export default function StartLearning() {
@@ -34,7 +34,9 @@ export default function StartLearning() {
               </ul>
             </div>
 
-            <div className={style.courses}></div>
+            <div className={style.courses}>
+              <Outlet context={{...course}}/>
+            </div>
           </div>
         </div>
       ) : (
