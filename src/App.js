@@ -1,5 +1,7 @@
+import Nav from "./components/Nav/Nav";
+
 export default function App(){
   return(<>
-    <h1>E-Learning </h1>
+    <Nav/>
   </>)
 }
