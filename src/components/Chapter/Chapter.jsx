@@ -20,7 +20,7 @@ export default function Chapter() {
         <iframe
           width="800"
           height="560"
-          src=""
+          src="https://classroom.codingninjas.com/app/classroom/me/22756/content/514929/offering/7882974?leftPanelTabValue=PROBLEM&customSource=studio_nav"
           title="React Video"
           frameborder="1"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
