@@ -3,6 +3,8 @@ import Nav from "./components/Nav/Nav";
 import Home from "./Pages/Home/Home";
 import Courses from "./Pages/Courses/Courses.jsx";
 import CourseDetails from "./Pages/CourseDetails/CourseDetails.jsx";
+import StartLearning from "./Pages/StartLearning/StartLearning.jsx";
+import Chapter from "./components/Chapter/Chapter.jsx";
 export default function App() {
   const router = createBrowserRouter([
     {
@@ -18,12 +20,22 @@ export default function App() {
           path: "/courses",
           children: [
             {
-              index:true,
-              element:<Courses/>,
+              index: true,
+              element: <Courses />,
             },
             {
               path: ":id",
               element: <CourseDetails />,
+            },
+          ],
+        },
+        {
+          path: "/:id/:courseDetails/learning",
+          element: <StartLearning />,
+          children: [
+            {
+              path: "chapter/:chapter",
+              element: <Chapter />,
             },
           ],
         },
@@ -33,9 +45,6 @@ export default function App() {
   return (
     <>
       <RouterProvider router={router} />
-      {/* <Nav/>
-      <Home/>
-      <Courses/> */}
     </>
   );
 }

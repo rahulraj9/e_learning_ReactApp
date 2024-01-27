@@ -15,7 +15,7 @@ export default function Courses(){
       {coursesData.map((course, index) => {
         return (
           <div key={index} className={style.card_container}>
-          <Link to={course.id}>
+          <Link to={`/courses/${course.id}`}>
             <Card
               key={course.id}
               id={course.id}
