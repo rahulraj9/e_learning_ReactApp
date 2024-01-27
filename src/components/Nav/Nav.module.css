@@ -38,10 +38,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: end;
- 
+  text-decoration: none;
   height: 100%;
 }
 
+a{
+  text-decoration: none;
+  color: #000;
+}
 
 .nav_details button {
   cursor: pointer;
